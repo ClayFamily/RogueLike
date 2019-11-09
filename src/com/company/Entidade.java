@@ -1,0 +1,35 @@
+package com.company;
+
+public class Entidade {
+
+    protected Ponto2D posicao;
+    protected String simbolo;
+
+    public Entidade(Ponto2D posicao, String string) {
+        this.posicao = posicao;
+        this.simbolo = string;
+    }
+
+    @Override
+    public String toString() {
+        return String.valueOf(simbolo);
+    }
+
+    public Ponto2D getPosicao() {
+        return posicao;
+    }
+
+    public void setPosicao(Ponto2D posicao) {
+        this.posicao = posicao;
+    }
+
+	public String getSimbolo() {
+		return simbolo;
+	}
+
+	public void setSimbolo(String simbolo) {
+		this.simbolo = simbolo;
+	}
+
+    
+}
